@@ -7,6 +7,14 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:react-hooks/recommended"
+
+    ]
+  },
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

@@ -1,180 +1,181 @@
 [
   {
     "id": "p1",
-    "title": "Forest Waterfall",
+    "title": "숲 속 폭포",
     "image": {
       "src": "forest-waterfall.jpg",
-      "alt": "A tranquil forest with a cascading waterfall amidst greenery."
+      "alt": "푸른 잎들 사이에서 물이 흐르는 평온한 숲."
     },
     "lat": 44.5588,
     "lon": -80.344
   },
   {
     "id": "p2",
-    "title": "Sahara Desert Dunes",
+    "title": "사하라 사막의 둔덕",
     "image": {
       "src": "desert-dunes.jpg",
-      "alt": "Golden dunes stretching to the horizon in the Sahara Desert."
+      "alt": "사하라 사막의 수평선까지 이어지는 황금색 둔덕."
     },
     "lat": 25.0,
     "lon": 0.0
   },
   {
     "id": "p3",
-    "title": "Himalayan Peaks",
+    "title": "히말라야 산맥",
     "image": {
       "src": "majestic-mountains.jpg",
-      "alt": "The sun setting behind snow-capped peaks of majestic mountains."
+      "alt": "눈 덮인 웅장한 산들 뒤로 해가 지고 있다."
     },
     "lat": 27.9881,
     "lon": 86.925
   },
   {
     "id": "p4",
-    "title": "Caribbean Beach",
+    "title": "카리브해 해변",
     "image": {
       "src": "caribbean-beach.jpg",
-      "alt": "Pristine white sand and turquoise waters of a Caribbean beach."
+      "alt": "카리브해 해변의 청록색 바다와 새하얀 모래."
     },
     "lat": 18.2208,
     "lon": -66.5901
   },
   {
     "id": "p5",
-    "title": "Ancient Grecian Ruins",
+    "title": "고대 그리스의 폐허",
     "image": {
       "src": "ruins.jpg",
-      "alt": "Historic ruins standing tall against the backdrop of the Grecian sky."
+      "alt": "그리스 하늘을 배경으로 우뚝 서 있는 역사적인 폐허."
     },
     "lat": 37.9715,
     "lon": 23.7257
   },
   {
     "id": "p6",
-    "title": "Amazon Rainforest Canopy",
+    "title": "아마존 비오톱",
     "image": {
       "src": "rainforest.jpg",
-      "alt": "Lush canopy of a rainforest, teeming with life."
+      "alt": "생명이 넘치는 아마존 비오톱의 무성한 나무들."
     },
     "lat": -3.4653,
     "lon": -62.2159
   },
   {
     "id": "p7",
-    "title": "Northern Lights",
+    "title": "북극광",
     "image": {
       "src": "northern-lights.jpg",
-      "alt": "Dazzling display of the Northern Lights in a starry sky."
+      "alt": "별이 가득한 하늘에서 눈부신 북극광의 펼쳐진 모습."
     },
     "lat": 64.9631,
     "lon": -19.0208
   },
   {
     "id": "p8",
-    "title": "Japanese Temple",
+    "title": "일본의 사원",
     "image": {
       "src": "japanese-temple.jpg",
-      "alt": "Ancient Japanese temple surrounded by autumn foliage."
+      "alt": "가을 단풍이 둘러싼 고대 일본 사원."
     },
     "lat": 34.9949,
     "lon": 135.785
   },
   {
     "id": "p9",
-    "title": "Great Barrier Reef",
+    "title": "그레이트 배리어 리프",
     "image": {
       "src": "great-barrier-reef.jpg",
-      "alt": "Vibrant coral formations of the Great Barrier Reef underwater."
+      "alt": "그레이트 배리어 리프의 생생한 산호초."
     },
     "lat": -18.2871,
     "lon": 147.6992
   },
   {
     "id": "p10",
-    "title": "Parisian Streets",
+    "title": "파리의 거리",
     "image": {
       "src": "parisian-streets.jpg",
-      "alt": "Charming streets of Paris with historic buildings and cafes."
+      "alt": "역사적인 건물과 카페가 있는 매력적인 파리의 거리."
     },
     "lat": 48.8566,
     "lon": 2.3522
   },
   {
     "id": "p11",
-    "title": "Grand Canyon",
+    "title": "그랜드 캐년",
     "image": {
       "src": "grand-canyon.jpg",
-      "alt": "Expansive view of the deep gorges and ridges of the Grand Canyon."
+      "alt": "그랜드 캐년의 깊은 협곡과 산맥의 넓은 전망."
     },
     "lat": 36.1069,
     "lon": -112.1129
   },
   {
     "id": "p12",
-    "title": "Venetian Canals",
+    "title": "베네치아의 운하",
     "image": {
       "src": "venetian-canals.jpg",
-      "alt": "Glistening waters of the Venetian canals as gondolas glide by at sunset."
+      "alt": "베네치아의 운하에서 곤돌라가 지나가는 모습."
     },
     "lat": 45.4408,
     "lon": 12.3155
   },
   {
     "id": "p13",
-    "title": "Taj Mahal",
+    "title": "타지 마할",
     "image": {
       "src": "taj-mahal.jpg",
-      "alt": "The iconic Taj Mahal reflecting in its surrounding waters during sunrise."
+      "alt": "일출 시 주변 물에 비친 타지 마할의 아이코닉한 모습."
     },
     "lat": 27.1751,
     "lon": 78.0421
   },
   {
     "id": "p14",
-    "title": "Kerala Backwaters",
+    "title": "케랄라의 뒷물",
     "image": {
       "src": "kerala-backwaters.jpg",
-      "alt": "Tranquil waters and lush greenery of the Kerala backwaters."
+      "alt": "케랄라 뒷물의 평온한 물과 무성한 초록색."
     },
     "lat": 9.4981,
     "lon": 76.3388
   },
   {
     "id": "p15",
-    "title": "African Savanna",
+    "title": "아프리카의 사바나",
     "image": {
       "src": "african-savanna.jpg",
-      "alt": "Wild animals roaming freely in the vast landscapes of the African savanna."
+      "alt": "아프리카 사바나의 광활한 풍경에서 자유롭게 뛰노는 야생 동물들."
     },
     "lat": -2.153,
     "lon": 34.6857
   },
   {
     "id": "p16",
-    "title": "Victoria Falls",
+    "title": "빅토리아 폭포",
     "image": {
       "src": "victoria-falls.jpg",
-      "alt": "The powerful cascade of Victoria Falls, a natural wonder between Zambia and Zimbabwe."
+      "alt": "잠비아와 짐바브웨 사이의 자연 경관인 빅토리아 폭포의 강력한 폭포."
     },
     "lat": -17.9243,
     "lon": 25.8572
-  },
+  }
+,
   {
     "id": "p17",
-    "title": "Machu Picchu",
+    "title": "마추픽추",
     "image": {
       "src": "machu-picchu.jpg",
-      "alt": "The historic Incan citadel of Machu Picchu illuminated by the morning sun."
+      "alt": "아침 햇살에 비춰진 역사적인 잉카의 마추픽추 성채."
     },
     "lat": -13.1631,
     "lon": -72.545
   },
   {
     "id": "p18",
-    "title": "Amazon River",
+    "title": "아마존 강",
     "image": {
       "src": "amazon-river.jpg",
-      "alt": "Navigating the waters of the Amazon River, surrounded by dense rainforest."
+      "alt": "밀림에 둘러싸인 아마존 강의 물길을 탐험하는 모습."
     },
     "lat": -3.4653,
     "lon": -58.38

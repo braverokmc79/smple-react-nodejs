@@ -4,35 +4,22 @@ import Modal from "./components/Modal.jsx";
 import DeleteConfirmation from "./components/DeleteConfirmation.jsx";
 import logoImg from "./assets/logo.png";
 import AvailablePlaces from "./components/AvailablePlaces.jsx";
-import { fetchUserPlaces, updateUserPlaces } from "./http.js";
+import { fetchAvailablePlaces, fetchUserPlaces, updateUserPlaces } from "./http.js";
 import Error from "./components/Error.jsx";
+import {useFetch} from "./hooks/useFetch";
+
 
 function App() {
   const selectedPlace = useRef();
-  const [userPlaces, setUserPlaces] = useState([]);
+  const [errorUpdatingPlaces, setErrorUpdatingPlaces] = useState(false)  
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [errorUpdatingPlaces, setErrorUpdatingPlaces] = useState(false)
-  const [isFetching, setIsFetching] = useState(false);
-  const [error, setError] =useState(false);
+
 
 
   // 방문하고 싶습니다 ... fetch visit  list
-  useEffect(() => {
-    async function fetchPlaces(){
-      setIsFetching(true);
-      try{      
-        const places=await fetchUserPlaces(); 
-        setUserPlaces(places);  
-        setIsFetching(false);   
-      }catch(error){
-        console.log("에러  : ", error);
-        setError({message: error.message || 'Failed to fetch user places.' });
-        setIsFetching(false);
-      }           
-     
-    }
-    fetchPlaces();
-  }, []);
+  const { isFetching, error ,fetchedData:userPlaces,
+    setFetchedData:setUserPlaces
+  }= useFetch(fetchUserPlaces, []);
 
 
 
@@ -44,6 +31,7 @@ function App() {
   function handleStopRemovePlace() {
     setModalIsOpen(false);
   }
+
 
   async function handleSelectPlace(selectedPlace) {
     setUserPlaces((prevPickedPlaces) => {
@@ -67,6 +55,7 @@ function App() {
     }
     
   }
+
 
   const handleRemovePlace = useCallback(async function handleRemovePlace() {
     setUserPlaces((prevPickedPlaces) =>
@@ -94,7 +83,10 @@ function App() {
 
   return (
     <>
-      <Modal open={errorUpdatingPlaces}   onClose={handleError} >
+      <Modal open={errorUpdatingPlaces}   
+        onClose={handleError} 
+        
+        >
         <Error 
           title="에러 발생됨!"
           message={errorUpdatingPlaces.message}
@@ -113,10 +105,9 @@ function App() {
 
       <header>
         <img src={logoImg} alt="Stylized globe" />
-        <h1>PlacePicker</h1>
+        <h1>Place Picker</h1>
         <p>
-          Create your personal collection of places you would like to visit or
-          you have visited.
+        방문하고 싶은 장소나 방문했던 장소에 대한 개인 컬렉션을 만드세요.
         </p>
       </header>
       <main>
@@ -128,7 +119,6 @@ function App() {
           fallbackText="아래에서 방문하고 싶은 장소를 선택하세요."         
           isLoading={isFetching}
           loadingText="장소를 가져오는 중..."
-
           places={userPlaces}
           onSelectPlace={handleStartRemovePlace}
         />}
